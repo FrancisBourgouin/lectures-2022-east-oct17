@@ -83,3 +83,23 @@ const options2 = {
   errorMsg: "OH NO",
   amount: 5,
 };
+
+const someFunction = () => {
+  // isGood will be either true or false
+  const isGood = Math.random() > 0.5;
+  const isBad = !isGood;
+  // if (isGood) {
+  //   for (let i = 0; i < 10; i++) {
+  //     console.log("AHHHHHH YISSSS");
+  //   }
+  // }
+
+  if (!isGood) {
+    return "bad!";
+  }
+
+  for (let i = 0; i < 10; i++) {
+    console.log("AHHHHHH YISSSS");
+    // if()
+  }
+};
