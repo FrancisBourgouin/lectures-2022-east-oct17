@@ -1,0 +1,10 @@
+.PlantListItem {
+  border: 0.5em solid black;
+  padding: 1em;
+  margin: 1em;
+
+  list-style-type: none;
+
+  font-family: "Helvetica";
+  font-weight: 600;
+}
