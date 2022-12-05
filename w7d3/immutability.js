@@ -39,7 +39,10 @@ console.log(bill, will);
 
 bill.push({ c: 3 });
 
-delete bill[1].b;
-bill[1].r = 2;
+const newObj = { ...bill[1] };
+delete newObj.b;
+newObj.r = 2;
+
+bill[1] = newObj;
 
 console.log(bill, will);
