@@ -1,5 +1,5 @@
 export default function Player(props) {
-  const { playerChoice } = props;
+  const { playerChoice, selectOption } = props;
   return (
     <section className="player" data-testid="player">
       <span role="img" aria-label="player">
@@ -13,6 +13,7 @@ export default function Player(props) {
             value="Moai"
             data-testid="🗿"
             className={playerChoice === "🗿" ? "selected" : ""}
+            onClick={() => selectOption("🗿")}
           >
             <span role="img" aria-label="moai">
               🗿
@@ -23,6 +24,7 @@ export default function Player(props) {
             value="Axe"
             data-testid="🪓"
             className={playerChoice === "🪓" ? "selected" : ""}
+            onClick={() => selectOption("🪓")}
           >
             <span role="img" aria-label="axe">
               🪓
@@ -33,6 +35,7 @@ export default function Player(props) {
             value="Tree"
             data-testid="🌳"
             className={playerChoice === "🌳" ? "selected" : ""}
+            onClick={() => selectOption("🌳")}
           >
             <span role="img" aria-label="tree">
               🌳
