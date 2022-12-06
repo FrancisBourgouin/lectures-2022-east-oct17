@@ -30,3 +30,13 @@ const report = (pantry, raid) => {
 };
 
 report(pantry, cheeverRaid);
+
+
+const getAppointmentsForDay = () => {
+  // ...
+}
+const getInterviewersForDay = (state) => {
+  // ...
+}
+
+// Tv shows, genre
